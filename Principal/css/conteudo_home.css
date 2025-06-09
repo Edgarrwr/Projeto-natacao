@@ -1,0 +1,131 @@
+#home{
+    display: flex;
+}
+
+#cta{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 28px; 
+}
+
+#cta .title{
+    font-size:4rem;
+    color: #ffff;
+}
+
+#cta .title span{
+    color: #e9a209;
+}
+
+
+#cta-button{
+    display: flex;
+    gap: 20px;
+  
+    
+}
+
+#cta-button a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.btn-contato{
+    border: 3px solid #e9a209;;
+    padding: 15px;
+    border-radius: 15px;
+    color: #e9a209;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #e6e6e6;
+}
+
+p{
+    font-weight: 800;
+    color: #05013A;
+    
+}
+
+
+
+#phone_button{
+    padding: 10px;
+    background-color: #ffff;
+    border-radius: 10px;
+    color: blue;
+}
+
+.btn-number{
+  background-color: blue;
+  padding: 5px;
+  border-radius: 10px;
+}
+.btn-number i{
+    color: #ffff;
+}
+
+.social-midia{
+    display: flex;
+    gap: 5px;
+
+}
+
+.social-midia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffff;
+
+}
+
+.banner{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    
+}
+
+.banner img{
+    width: 100%;
+    width: fit-content;
+}
+
+.shape{
+    background-image: url(../img/Vector2.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top:0;
+   z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+    #cta {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 80px;
+        
+    }
+
+    #cta-button{
+        justify-content: center;
+        text-align: center;
+       
+    }
+
+
+
+}
+

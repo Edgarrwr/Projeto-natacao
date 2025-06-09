@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/77b29373d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Cadastro/css/bemVindo.css">
+    <link rel="stylesheet" href="../Cadastro/css/cadastroUser.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Italiana&family=Jacques+Francois&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Novos Usuarios</title>
+</head>
+
+<body id="backcadastro">
+
+
+    <nav id="sidebar"> <!--Inicio barra lateral-->
+
+        <div id="sidebar_content"><!--Inicio sideBar-->
+
+            <div id="user"> <!-- inicio vatar user-->
+                <img src="../Cadastro/img/9440461(1).jpg" alt="avatar" id="user_avatar">
+                <p id="user_infos">
+                    <span class="item-descricao">
+                        Hemerson Lins
+                    </span>
+                    <span class="item-descricao">
+                        Adiminstrativo
+                    </span>
+                </p>
+            </div><!-- fim avatar user-->
+
+            <ul id="side_itens"> <!-- inicio itens-->
+                <li class="side-item ">
+                    <a href="../Cadastro/bemVindo.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="item-descricao">
+                            Inicio
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item active">
+                    <a href="../Cadastro/cadastroUser.html">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span class="item-descricao">
+                            Novo usuario
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="item-descricao">
+                            Usuarios
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span class="item-descricao">
+                            Calendario
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-descricao">
+                            Minha Conta
+                        </span>
+                    </a>
+                </li>
+            </ul> <!-- final itens-->
+
+            <button id="open_btn"> <!-- inicio buttonLogar-->
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button><!-- final buttonLogar-->
+        </div><!-- final sideBar-->
+
+        <div id="logout"> <!--inicio logout-->
+            <button onclick="window.location.href='../login/login.html'" id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-descricao">
+                    logout
+                </span>
+            </button>
+        </div> <!--Final logout-->
+    </nav> <!--Final barra lateral-->
+
+    <main id="form_container">
+        <div id="form_header">
+            <h1 id="form_title"> Cadastrar Novo usuario</h1>
+        </div>
+
+
+        <form action="" id="form"><!--Inicio Form-->
+            <div id="input_container"><!--Inicio container-->
+                
+                <div class="input-box"><!--Inicio input-->
+                    <label for="name" class="form-label">
+                        Primeiro nome
+                    </label>
+                    <div class="input-field">
+                        <input type="text" name="name" id="name" class="form-cotrol" placeholder="Digite seu nome">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span class="error"></span>
+                </div> <!--fim input-->
+
+                <div class="input-box"><!--Inicio input-->
+                    <label for="last_name" class="form-label">
+                        Ultimo nome
+                    </label>
+                    <div class="input-field">
+                        <input type="text" name="last_name" id="last_name" class="form-cotrol"
+                            placeholder="Digite seu ultimo nome">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span class="error"></span>
+                </div><!--fim input-->
+
+                <div class="input-box"><!--Inicio input-->
+                    <label for="cpf" class="form-label">
+                        Cpf
+                    </label>
+                    <div class="input-field">
+                        <input type="text" name="cpf" id="cpf" class="form-cotrol" placeholder="xxx.xxx.xxx-xx">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span class="error"></span>
+                </div><!--fim input-->
+
+                <div class="input-box"><!--Inicio input-->
+                    <label for="birthdate" class="form-label">
+                        Nascimento
+                    </label>
+                    <div class="input-field">
+                        <input type="date" name="birthdate" id="birthdate" class="form-cotrol">
+                    </div>
+                    <span class="error"></span>
+                </div> <!--fim input-->
+
+                <div class="input-box"><!--Inicio input-->
+                    <label for="email" class="form-label">
+                        e-mail
+                    </label>
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" class="form-cotrol" placeholder="@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span class="error"></span>
+                </div> <!--fim input-->
+
+                <div class="input-box"><!--Inicio input-->
+                    <label for="namber" class="form-label">
+                       Contato
+                    </label>
+                    <div class="input-field">
+                        <input type="text" name="contato" id="contato" class="form-cotrol" placeholder="() x xxxx-xxxx">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span class="error"></span>
+                </div> <!--fim input-->
+
+                <div class="radio-container"><!--Inicio input-->
+                    <label class="form-label">
+                        Seleciona os dias das aulas
+                    </label>
+                    <div id="gender_inputs">
+                        <div class="check-box">
+                            <input type="checkbox" id="terca" name="gender" value="segunda">
+                            <label for="segunda" class="form-label">Segunda-feira</label>
+
+                            <input type="checkbox" id="terca" name="gender" value="terca">
+                            <label for="terca" class="form-label">Terça-feira</label>
+
+                            <input type="checkbox" id="quarta" name="gender" value="quarta">
+                            <label for="quarta" class="form-label">Quarta-feira</label>
+
+                            <input type="checkbox" id="quinta" name="gender" value="quinta">
+                            <label for="quinta" class="form-label">Quinta-feira</label>
+
+                            <input type="checkbox" id="sexta" name="gender" value="sexta">
+                            <label for="sexta" class="form-label">Sexta-feira</label>
+                        </div>
+                    </div>
+                    <span class="error"></span>
+                </div> <!--fim input-->
+
+                <div class="radio-container"><!--Inicio input-->
+                    <label class="form-label">
+                        Seleciona os horarios
+                    </label>
+                    <div id="gender_inputs">
+                        <div class="check-box">
+                            <input type="checkbox" id="hora_7" name="gender" value="07:00">
+                            <label for="hora_7" class="form-label">7h</label>
+
+                            <input type="checkbox" id="hora_9" name="gender" value="09:00">
+                            <label for="hora_9" class="form-label">9h</label>
+
+                            <input type="checkbox" id="hora_11" name="gender" value="11:00">
+                            <label for="hora_11" class="form-label">11h</label>
+
+                            <input type="checkbox" id="hora_15" name="gender" value="15:00">
+                            <label for="hora_15" class="form-label">15h</label>
+
+                            <input type="checkbox" id="hora_17" name="gender" value="17:00">
+                            <label for="hora_17" class="form-label">17h</label>
+
+                            <input type="checkbox" id="hora_19" name="gender" value="19:00">
+                            <label for="hora_19" class="form-label">19h</label>
+                        </div>
+                    </div>
+                </div> <!--fim input-->
+                <span class="error"></span>
+            </div> <!--fim input-->
+            </div><!--fim container-->
+
+            <button type="submit" class="btn-enviar">
+                <i class="fa-solid fa-check"></i>
+                Criar conta
+            </button>
+        </form><!--Fim Form-->
+
+
+
+    </main>
+
+
+
+
+
+    <script defer src="../Cadastro/js/script.js"></script>
+    <script defer src="../Cadastro/js/validacao.js"></script>
+</body>
+
+</html>
